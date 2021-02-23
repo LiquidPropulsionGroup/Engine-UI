@@ -4,7 +4,7 @@
 ## Why React Native
 React native allows us to build a UI with a standard code base that can be setup to run on desktop OS (windows,Linus, MacOS) or even on Mobile (Android or IOS). Makes it simpler for us write without having multiple projects for each OS. 
 
-##Requirments
+## Requirments
 General:
 -node.js
 -React native
