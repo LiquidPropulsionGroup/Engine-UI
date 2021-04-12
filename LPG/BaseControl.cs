@@ -12,10 +12,14 @@ namespace LPG
 {
     public partial class BaseControl : UserControl
     {
+        bool open = false;
+
         public BaseControl()
         {
             InitializeComponent();
+            
         }
+
 
         private void BaseControl_Load(object sender, EventArgs e)
         {
@@ -24,7 +28,25 @@ namespace LPG
 
         private void BaseControl_MouseDown(object sender, MouseEventArgs e)
         {
-            MessageBox.Show("hello world");
+            //MessageBox.Show("hello world");
+
+
+
+            if( open == false)
+            {
+                currentLbl.Text = "hello people pickers packers. \n hello people pickers packers. " +
+                "\n hello people pickers packers.";
+                open = true;
+            }
+            else
+            {
+                currentLbl.Text = "cur: value";
+                open = false;
+            }
+
+
+            
+
         }
     }
 }

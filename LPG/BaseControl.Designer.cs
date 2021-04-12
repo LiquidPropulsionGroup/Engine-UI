@@ -57,13 +57,17 @@ namespace LPG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.Color.Gray;
             this.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Controls.Add(this.currentLbl);
             this.Controls.Add(this.sensorLbl);
             this.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.MaximumSize = new System.Drawing.Size(411, 64);
+            this.MinimumSize = new System.Drawing.Size(411, 32);
             this.Name = "BaseControl";
-            this.Size = new System.Drawing.Size(413, 40);
+            this.Size = new System.Drawing.Size(409, 32);
             this.Load += new System.EventHandler(this.BaseControl_Load);
             this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.BaseControl_MouseDown);
             this.ResumeLayout(false);
