@@ -34,18 +34,17 @@ namespace LPG
 
             if( open == false)
             {
-                currentLbl.Text = "hello people pickers packers. \n hello people pickers packers. " +
-                "\n hello people pickers packers.";
+               
                 open = true;
+                chart1.Visible = true;
             }
             else
             {
-                currentLbl.Text = "cur: value";
+              
                 open = false;
+                chart1.Visible = false;
             }
 
-
-            
 
         }
     }
