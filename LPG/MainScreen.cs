@@ -12,14 +12,25 @@ namespace LPG
 {
     public partial class MainScreen : Form
     {
+        string connection = "";
+
+
+
+
+
+
         public MainScreen()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void connectionMenuItem_Click(object sender, EventArgs e)
         {
-            
+            MessageBox.Show("hello");
+
+
+
+
         }
     }
 }
