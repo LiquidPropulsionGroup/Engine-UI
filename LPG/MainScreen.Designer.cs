@@ -33,14 +33,13 @@ namespace LPG
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.Menu = new System.Windows.Forms.ToolStripMenuItem();
             this.valvesMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.connectionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.controlBTN = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.baseControl1 = new LPG.BaseControl();
             this.baseControl2 = new LPG.BaseControl();
             this.baseControl3 = new LPG.BaseControl();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
-            this.connectionMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.flowLayoutPanel3.SuspendLayout();
@@ -68,20 +67,20 @@ namespace LPG
             // 
             // valvesMenuItem
             // 
-            this.valvesMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1});
             this.valvesMenuItem.Name = "valvesMenuItem";
             this.valvesMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F1)));
             this.valvesMenuItem.Size = new System.Drawing.Size(188, 22);
             this.valvesMenuItem.Text = "Valves";
             this.valvesMenuItem.ToolTipText = "Open/Close valves ";
+            this.valvesMenuItem.Click += new System.EventHandler(this.valvesMenuItem_Click);
             // 
-            // toolStripMenuItem1
+            // connectionMenuItem
             // 
-            this.toolStripMenuItem1.CheckOnClick = true;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
-            this.toolStripMenuItem1.Text = "toolStripMenuItem1";
+            this.connectionMenuItem.Name = "connectionMenuItem";
+            this.connectionMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
+            this.connectionMenuItem.Size = new System.Drawing.Size(188, 22);
+            this.connectionMenuItem.Text = "Connection";
+            this.connectionMenuItem.Click += new System.EventHandler(this.connectionMenuItem_Click);
             // 
             // controlBTN
             // 
@@ -159,14 +158,6 @@ namespace LPG
             this.flowLayoutPanel3.Size = new System.Drawing.Size(1264, 599);
             this.flowLayoutPanel3.TabIndex = 6;
             // 
-            // connectionMenuItem
-            // 
-            this.connectionMenuItem.Name = "connectionMenuItem";
-            this.connectionMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.F10)));
-            this.connectionMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.connectionMenuItem.Text = "Connection";
-            this.connectionMenuItem.Click += new System.EventHandler(this.connectionMenuItem_Click);
-            // 
             // MainScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -203,7 +194,6 @@ namespace LPG
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel3;
         private System.Windows.Forms.ToolStripMenuItem Menu;
         private System.Windows.Forms.ToolStripMenuItem valvesMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
         private System.Windows.Forms.ToolStripMenuItem connectionMenuItem;
     }
 }

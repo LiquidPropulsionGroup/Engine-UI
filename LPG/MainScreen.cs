@@ -14,9 +14,8 @@ namespace LPG
     {
         string connection = "";
 
-
-
-
+        private ValvesForm valveForm = new ValvesForm();
+        
 
 
         public MainScreen()
@@ -30,6 +29,24 @@ namespace LPG
 
 
 
+
+        }
+
+        private void valvesMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            //if valve form has never been created then make it
+            if ( valveForm == null)
+            {
+                //MessageBox.Show("hello");
+                valveForm = new ValvesForm();
+                valveForm.BringToFront();
+            }
+            else
+            {
+                //bring to front if valve form not focused
+                valveForm.BringToFront();
+            }
 
         }
     }
